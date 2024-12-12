@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae - Helen Cochachin Guillermo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+    <button id="theme-toggle" class="btn btn-dark">🌙</button>
+    
+    <header class="bg-dark text-white text-center py-4">
+        <img src="helen_foto.jpg" alt="Foto de perfil" class="profile-photo">
+        <h1>Currículum Vitae</h1>
+        <p>Helen Cochachi Guillermo</p>
+    </header>
+    
+    <main class="container my-5">
+        <!-- Información Personal -->
+        <section id="personal-info" class="text-center mb-4">
+            <h2>Información Personal</h2>
+            <p><strong>Dirección:</strong> Huarmey, Ancash, Perú</p>
+            <p><strong>Teléfono:</strong> +51 947624849</p>
+            <p><strong>Email:</strong> helencochachinguillermo.04@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/helen-cochachi</a></p>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <div class="col-md-6">
+            <h3 class="section-subtitle">Formulario de Contacto</h3>
+            <form id="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <div id="form-feedback" class="mt-3"></div>
+        </div>
+
+        <!-- Objetivo Profesional -->
+        <section id="objective" class="text-center mb-4">
+            <h2>Objetivo Profesional</h2>
+            <p>
+                Estudiante de Ingeniería en Sistemas de la Universidad Tecnológica del Perú (UTP), con habilidades en desarrollo web y gestión de proyectos, busca una oportunidad para aplicar sus conocimientos y adquirir experiencia práctica durante el periodo vacacional.
+            </p>
+        </section>
+
+         <!-- Habilidades -->
+         <section id="skills" class="text-center mb-4">
+            <h2>Habilidades</h2>
+            <input type="text" id="filter-skills" class="form-control mb-3" placeholder="Filtrar habilidades...">
+            <ul id="skills-list" class="list-group d-inline-block text-start">
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">CSS3</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Bootstrap</li>
+            </ul>
+        </section>
+
+        
+        <!-- Educación -->
+        <section id="education" class="mb-4">
+            <h3 class="section-subtitle">Educación</h3>
+            <ul>
+                <li><strong>Universidad Tecnológica del Perú (UTP):</strong> Ingeniería en Sistemas</li>
+                <li><strong>Año de Ingreso:</strong> 2022</li>
+                <li><strong>Cursos Relevantes:</strong> Algoritmos, Desarrollo Web, Bases de Datos, Redes y comunicación de datos</li>
+            </ul>
+        </section>
+        <!-- Experiencia Laboral -->
+        <section id="experience" class="mb-4">
+            <h3 class="section-subtitle">Experiencia Laboral</h3>
+            <ul>
+                <li>
+                    <strong>Nombre del Puesto:</strong> Asistente de TI<br>
+                    <strong>Empresa/Organización:</strong> Innovatech Solutions <br>
+                    <strong>Ubicación:</strong> Lima, Perú <br>
+                    <strong>Fecha:</strong> Junio 2023 – Diciembre 2023 <br>
+                    <strong>Responsabilidades y Logros:</strong>
+                    <ul>
+                        <li>Configuración de redes locales</li>
+                        <li>Soporte técnico a usuarios</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- Idiomas -->
+        <section id="languages" class="mb-4">
+            <h3 class="section-subtitle">Idiomas</h3>
+            <ul>
+                <li>Español: Nativo</li>
+                <li>Inglés: Intermedio (B2)</li>
+            </ul>
+        </section>
+
+        <!-- Actividades Extracurriculares -->
+        <section id="extracurricular" class="mb-4">
+            <h3 class="section-subtitle">Actividades Extracurriculares</h3>
+            <ul>
+                <li>
+                    <strong>Miembro del Club de Tecnología:</strong> 2023 – Presente <br>
+                    Participación en hackatones y eventos académicos.
+                </li>
+                <li>
+                    <strong>Voluntariado en Huarmey:</strong> 2022 <br>
+                    Apoyo logístico en actividades sociales.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Certificaciones y Cursos -->
+        <section id="certifications" class="mb-4">
+            <h3 class="section-subtitle">Certificaciones y Cursos</h3>
+            <ul>
+                <li><strong>Algoritmos y estuctura de datos:</strong> UTP (Diciembre 2024)</li>
+                <li><strong>Certificación en Office Avanzado:</strong> SENATI (Diciembre 2022)</li>
+            </ul>
+        </section>
+
+
+        <!-- Referencias -->
+        <section id="references" class="text-center mb-4">
+            <h2>Referencias</h2>
+            <p>Disponibles a solicitud.</p>
+            <a href="mailto:helencochachinguillermo.04@gmail.com?subject=Consulta de Referencias&body=Hola Helen, me gustaría solicitar tus referencias laborales." 
+               class="btn btn-custom btn-primary me-2">
+                <i class="bi bi-envelope-fill"></i> Enviar Correo
+            </a>
+            <a href="https://wa.me/51947624849?text=Hola%20Helen,%20quisiera%20solicitar%20tus%20referencias%20laborales." 
+               target="_blank" 
+               class="btn btn-custom btn-success">
+                <i class="bi bi-whatsapp"></i> Enviar WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Helen Cochachin Guillermo</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
